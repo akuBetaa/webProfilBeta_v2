@@ -10,6 +10,7 @@ tailwind.config = {
           background: "#F4F5F5",
           background1: "#FFFFFF",
           background2: "#F4F5F5",
+          border: "rgba(0, 0, 0, 0.08)",
           text: "#000000",
         },
         dark: {
@@ -18,7 +19,9 @@ tailwind.config = {
           tertiary: "#rgba(255, 255, 255, 0.4)",
           background: "#141414",
           background1: "#1a1a1a",
+          background1_1: "rgba(255, 255, 255, 0.14)",
           background2: "#282828",
+          border: "rgba(255, 255, 255, 0.06)",
           text: "#ffffff",
         },
       },

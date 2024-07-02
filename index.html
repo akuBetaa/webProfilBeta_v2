@@ -1,49 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porto @AkuBetaa</title>
-    <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/83751910?s=96&v=4"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="./src/style/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porto @AkuBetaa</title>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/83751910?s=96&v=4" type="image/x-icon" />
 
-    <!-- icons -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
-  </head>
+  <!-- Tailwind CSS  -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+  <!-- style CSS  -->
+  <link rel="stylesheet" href="./src/style/index.css">
+
+  <!-- flowbite  -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- icons -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel="stylesheet" href="https://fontawesome.com/icons/bootstrap?f=brands&s=solid">
+</head>
 
 
-  <body class="mx-20 my-5 min-h-screen bg-light-background dark:bg-dark-background transition-colors duration-500 font-inter">
-    <nav class="flex justify-between">
-      <h2 class="text-2xl text-text dark:text-dark-text">@akuBetaa</h2>
-      <div class="flex gap-4 items-center justify-center">
-        <a href="https://www.linkedin.com/in/betanurulawwalin/">
-          <i class="fi fi-brands-linkedin text-text dark:text-dark-text text-3xl"></i>
-        </a>
-        <a href="https://github.com/akuBetaa">
-          <i class="fi fi-brands-github text-text dark:text-dark-text text-3xl"></i>
-        </a>
-        <button id="theme-toggle" class="relative w-12 h-6 bg-gray-300 rounded-full focus:outline-none dark:bg-gray-600">
-          <span class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md transition-transform transform dark:translate-x-6"></span>
-        </button>
+<body class="px-5 md:px-10 py-5 bg-light-background dark:bg-dark-background transition-colors duration-500 font-inter">
+  <div class="flex flex-col gap-8 ">
+    <div class="px-4 md:px-10 py-5 rounded-xl bg-light-background1 dark:bg-dark-background1">
+      <nav class="flex flex-col md:flex-row justify-between items-center">
+        <h2 class="text-base md:text-xl text-light-text dark:text-dark-text">@akuBetaa</h2>
+        <div class="flex gap-4 items-center justify-center mt-4 md:mt-0">
+          <a href="https://www.linkedin.com/in/betanurulawwalin/">
+            <i class="fi fi-brands-linkedin text-light-text dark:text-dark-text text-2xl md:text-3xl"></i>
+          </a>
+          <a href="https://github.com/akuBetaa">
+            <i class="fi fi-brands-github text-light-text dark:text-dark-text text-2xl md:text-3xl"></i>
+          </a>
+          <button id="theme-toggle"
+            class="relative w-10 h-5 md:w-12 md:h-6 bg-gray-300 rounded-full focus:outline-none dark:bg-gray-600">
+            <span
+              class="absolute left-1 top-1 w-3 h-3 md:w-4 md:h-4 bg-white rounded-full shadow-md transition-transform transform dark:translate-x-6"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="min-h-[300px] md:min-h-[450px] flex flex-col gap-4 justify-center">
+        <div class="flex flex-col md:space-y-4 font-semibold justify-center items-center text-center">
+          <h1 class="text-xl md:text-4xl text-primary dark:text-dark-primary">Hi, I'm <br class="md:hidden"><span>Beta
+              Nurul Awwalin</span></h1>
+          <h1 class="text-lg md:text-4xl text-primary dark:text-dark-primary">Frontend Developer & Software Engineer
+          </h1>
+        </div>
+        <div class="flex justify-center items-center text-center">
+          <p class="text-xs md:text-base text-light-secondary dark:text-dark-secondary leading-relaxed">
+            I'm a Frontend Developer and Software Engineer. I'm passionate about creating beautiful, user-friendly, and
+            <br class="hidden md:block"> performant web applications. I'm always looking for new and exciting projects
+            to work on.
+          </p>
+        </div>
       </div>
-    </nav>
 
-    <div class="flex justify-center items-center min-h-screen">
-        <h1 class="text-text dark:text-dark-text">Hi, I'm <span>Beta Nurul Awwalin</span></h1>
+      <div class="flex flex-col md:flex-row justify-between items-center mt-4">
+        <div class="flex gap-2 items-center text-light-primary dark:text-dark-primary">
+          <i class="fi fi-rs-marker"></i>
+          <h2 class="text-xs md:text-sm">Blitar, Jawa Timur, Indonesia</h2>
+        </div>
+        <div
+          class="flex gap-1 items-center justify-center text-light-primary dark:text-dark-primary p-1 px-3 rounded-2xl border border-light-border dark:border-dark-border mt-4 md:mt-0">
+          <h2 class="text-xs md:text-sm">More About Me</h2>
+          <i class="fi fi-rr-arrow-small-right text-lg md:text-xl mt-1"></i>
+        </div>
+      </div>
     </div>
 
-    <script src="./src/script/config.js"></script>
-    <script src="./src/script/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-  </body>
+    <!-- MY JOURNEY  -->
+    <div
+      class=" min-h-[250px] md:min-h-[400px] flex flex-col gap-4 text-center justify-center items-center px-4 md:px-20 lg:px-44 py-16 rounded-xl bg-light-background1 dark:bg-dark-background1">
+      <div class="text-sm md:text-base lg:text-lg text-light-tertiary dark:text-dark-tertiary">
+        MY JOURNEY
+      </div>
+      <div class="text-light-primary dark:text-dark-primary">
+        <h1 class="text-base md:text-3xl lg:text-4xl font-semibold">
+          Study Information Engineering. And I'm interested in Frontend Development
+        </h1>
+      </div>
+      <div class="text-xs md:text-sm lg:text-base text-light-secondary dark:text-dark-secondary">
+        My passion for frontend development is the power of the web. I'm always looking for new and exciting projects to
+        work on. I'm excited to continue learning and growing as a developer.
+      </div>
+    </div>
+
+    <!-- Project  -->
+    <div
+      class="flex flex-col gap-4 px-4 md:px-8 lg:px-10 py-5 md:py-8 lg:py-10 rounded-xl bg-light-background1 dark:bg-dark-background1">
+      <div class="text-light-primary dark:text-dark-primary">
+        <h1 class="text-2xl md:text-3xl font-semibold">
+          Project
+        </h1>
+      </div>
+   
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 text-light-primary dark:text-dark-primary">
+
+        <!-- Card Project 1 -->
+        <div
+          class="flex flex-col gap-3 border border-light-border dark:border-dark-border dark:bg-dark-background1_1 p-3 shadow rounded-xl">
+          <img src="./src/image/coba.png" class="rounded-md w-full object-cover" alt="">
+          <div>
+            <h3 class="text-base md:text-lg font-semibold">SIM Akademik</h3>
+            <p class="text-xs md:text-sm">
+              Project Macro MSIB Infinite Learning, membuat sistem informasi akademik untuk sekolah dasar.
+            </p>
+          </div>
+          <!-- Icons Tools -->
+          <div class="text-lg md:text-xl flex items-center gap-2">
+            <!-- HTML Icons  -->
+            <svg data-tooltip-target="html5" class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
+            </svg>
+            <div id="html5" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              HTML 5
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- CSS icons  -->
+            <svg data-tooltip-target="css" class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z" />
+            </svg>
+            <div id="css" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              CSS
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Boostrap Icons -->
+            <i data-tooltip-target="boostrap"
+              class="fa-brands fa-bootstrap text-light-primary dark:text-dark-primary"></i>
+            <div id="boostrap" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Boostrap
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Javascript Icons  -->
+            <i data-tooltip-target="javascript1" class="fi fi-brands-js"></i>
+            <div id="javascript1" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Javascript
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Figma Icons -->
+            <i data-tooltip-target="figma" class="fa-brands fa-figma"></i>
+            <div id="figma" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Figma
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+          <!-- Button Project -->
+          <div class="flex justify-between items-center text-xs md:text-sm mt-2">
+            <a href=""
+              class="flex items-center gap-1 px-3 md:px-5 py-1 border border-light-border dark:border-dark-border rounded-full hover:bg-light-background2 dark:hover:bg-dark-background1">
+              <i class="fi fi-brands-figma text-base md:text-xl mt-2"></i>
+              <p>Design</p>
+            </a>
+            <a href=""
+              class="flex items-center gap-1 px-3 md:px-5 py-1 border border-light-border dark:border-dark-border rounded-full hover:bg-light-background2 dark:hover:bg-dark-background1">
+              <i class="fi fi-brands-github text-base md:text-xl mt-2"></i>
+              <p>Code</p>
+            </a>
+            <a href=""
+              class="flex items-center gap-1 px-3 md:px-5 py-1 border border-light-border dark:border-dark-border rounded-full hover:bg-light-background2 dark:hover:bg-dark-background1">
+              <i class="fi fi-rr-eye text-base md:text-xl mt-2"></i>
+              <p>Demo</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Project 2 -->
+        <div
+          class="flex flex-col gap-3 border border-light-border dark:border-dark-border dark:bg-dark-background1_1 p-3 shadow rounded-xl">
+          <img src="./src/image/coba.png" class="rounded-md w-full object-cover" alt="">
+          <div>
+            <h3 class="text-base md:text-lg font-semibold">DBN Project</h3>
+            <p class="text-xs md:text-sm">
+              Website sistem pengajuan dan rekomendasi pelayanan Wifi menggunakan AHP.
+            </p>
+          </div>
+          <!-- Icons Tools -->
+          <div class="text-lg md:text-xl flex items-center gap-2">
+            <!-- Javascript Icons  -->
+            <i data-tooltip-target="javascript" class="fi fi-brands-js"></i>
+            <div id="javascript" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Javascript
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Tailwind Icons  -->
+            <svg data-tooltip-target="tailwind" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+              viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12" />
+            </svg>
+            <div id="tailwind" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Tailwind CSS
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- React Icons -->
+            <i data-tooltip-target="react" class="fi fi-tr-react pt-2"></i>
+            <div id="react" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              React Js
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Shacdn Icons  -->
+            <svg data-tooltip-target="shacdn" class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                d="M22.219 11.784L11.784 22.219a1.045 1.045 0 0 0 1.476 1.476L23.695 13.26a1.045 1.045 0 0 0-1.476-1.476M20.132.305L.305 20.132a1.045 1.045 0 0 0 1.476 1.476L21.608 1.781A1.045 1.045 0 0 0 20.132.305" />
+            </svg>
+            <div id="shacdn" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Shacdn UI
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- Axios Icons  -->
+            <svg data-tooltip-target="axios" class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              viewBox="0 0 24 24">
+              <path d="M11.068 2.9v19.397L8.954 24V7.864H4.975zM14.934 0v15.767h4.091l-6.2 5.089V1.469z" />
+            </svg>
+            <div id="axios" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              Axios
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+            <!-- NPM Icons  -->
+            <svg data-tooltip-target="npm" class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3.87H4v16h8v-13h5v13h3v-16h-8Z" />
+            </svg>
+            <div id="npm" role="tooltip"
+              class="absolute z-10 invisible inline-block px-3 py-2 text-xs font-medium text-white transition-opacity duration-300 bg-dark-background1 rounded-lg shadow-sm opacity-0 tooltip dark:text-light-primary dark:bg-light-background1">
+              NPM
+              <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+          </div>
+
+          <!-- Button Project -->
+          <div class="flex justify-center gap-4 md:gap-6 items-center text-xs md:text-sm">
+            <a href=""
+              class="flex items-center gap-1 px-3 md:px-5 py-1 border border-light-border dark:border-dark-border rounded-full hover:bg-light-background2 dark:hover:bg-dark-background1">
+              <i class="fi fi-brands-github text-base md:text-xl mt-2"></i>
+              <p>Code</p>
+            </a>
+            <a href=""
+              class="flex items-center gap-1 px-3 md:px-5 py-1 border border-light-border dark:border-dark-border rounded-full hover:bg-light-background2 dark:hover:bg-dark-background1">
+              <i class="fi fi-rr-eye text-base md:text-xl mt-2"></i>
+              <p>Demo</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./src/script/config.js"></script>
+  <script src="./src/script/index.js"></script>
+  <script src="./src/script/data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+
 </html>
