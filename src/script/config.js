@@ -16,7 +16,7 @@ tailwind.config = {
         dark: {
         primary: "#ffffff",
           secondary: "rgba(255, 255, 255, 0.6)",
-          tertiary: "#rgba(255, 255, 255, 0.4)",
+          tertiary: "#999999",
           background: "#141414",
           background1: "#1a1a1a",
           background1_1: "rgba(255, 255, 255, 0.14)",
