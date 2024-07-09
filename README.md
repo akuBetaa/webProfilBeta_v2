@@ -42,7 +42,3 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## Kontak
 Jika Anda memiliki pertanyaan atau ingin menghubungi saya, silakan kunjungi [halaman kontak](mailto:beta.n.awwalin@gmail.com) saya.
-
----
-
-Salin dan tempelkan kode ini ke file `README.md` di repositori GitHub Anda.
